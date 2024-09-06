@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+// 指定是否为一个源文件
+option java_multiple_files = false;
+
+option java_package = "com.starbright";
+
+option java_outer_classname = "First";
+
+message Simple {
+  oneof test_oneOf {
+    string name = 1;
+    int32  age = 2;
+  }
+}

@@ -1,0 +1,14 @@
+server:
+  port: 8080
+spring:
+  application:
+    # 默认是为空的
+    name: rpc-grpc-boot-server
+  # 不启动tomcat应用
+  main:
+    web-application-type: none
+
+# 核心配置grpc端口号
+grpc:
+  server:
+    port: 9000

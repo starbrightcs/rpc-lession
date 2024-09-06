@@ -15,6 +15,10 @@
     <module>thrift-server</module>
     <module>thrift-client</module>
     <module>thrift-common</module>
+    <module>rpc-grpc-demo</module>
+    <module>rpc-grpc-api</module>
+    <module>rpc-grpc-server</module>
+    <module>rpc-grpc-client</module>
   </modules>
 
   <properties>
