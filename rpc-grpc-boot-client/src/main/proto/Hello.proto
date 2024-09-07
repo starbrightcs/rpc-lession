@@ -1,0 +1,37 @@
+syntax = "proto3";
+
+option java_multiple_files = false;
+option java_package = "com.starbright.rpcgrpcbootclient.grpc";
+// 这个是需要注意的，一般情况下都是定义和文件名称一致，protobuf生成的类都必须通过这个名字去使用
+option java_outer_classname = "HelloProto";
+
+/*
+  IDL的目的：发布RPC服务。
+  那么在client向server发起服务的时候需要传递数据，对应的是message
+  在server向client进行响应结果时也需要数据，对应的是message
+  那么我们需要先定义message,再进行定义service
+ */
+
+message HelloRequest {
+  string name = 1;
+}
+
+message HelloResponse {
+  string result = 1;
+}
+
+service HelloService {
+  // 简单一元RPC
+  rpc hello(HelloRequest) returns(HelloResponse) {}
+  // 服务端流式RPC
+  rpc c2ss(HelloRequest) returns(stream HelloResponse) {}
+  // 客户端流式RPC
+  rpc cs2s(stream HelloRequest) returns(HelloResponse) {}
+  // 双向流式RPC
+  rpc css2ss(stream HelloRequest) returns(stream HelloResponse) {}
+}
+
+/*
+  这时候我们已经定义好message、service了，但是怎么转换为我们需要的编程语言呢？
+  通过protobuf工具进行转换：protoc
+ */

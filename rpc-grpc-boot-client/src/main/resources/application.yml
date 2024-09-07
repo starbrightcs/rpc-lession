@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: rpc-grpc-boot-client
+
+grpc:
+  client:
+    grpc-server:
+      # 设置服务端地址
+      address: 'static://127.0.0.1:9000'
+      negotiation-type: plaintext
