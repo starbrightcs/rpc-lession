@@ -15,4 +15,6 @@ message HelloResponse {
 
 service HelloService {
   rpc hello(HelloRequest) returns(HelloResponse) {}
+
+  rpc hello1(stream HelloRequest) returns(stream HelloResponse) {}
 }

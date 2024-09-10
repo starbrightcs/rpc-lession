@@ -25,4 +25,28 @@ public class HelloServiceImpl extends HelloServiceGrpc.HelloServiceImplBase {
 		);
 		responseObserver.onCompleted();
 	}
+
+	@Override
+	public StreamObserver<HelloProto.HelloRequest> hello1(StreamObserver<HelloProto.HelloResponse> responseObserver) {
+		return new StreamObserver<HelloProto.HelloRequest>() {
+			@Override
+			public void onCompleted() {
+				log.debug("request message all receive ...");
+				responseObserver.onNext(HelloProto.HelloResponse.newBuilder().setResult("this is result1").build());
+				responseObserver.onNext(HelloProto.HelloResponse.newBuilder().setResult("this is result2").build());
+				responseObserver.onCompleted();
+			}
+
+			@Override
+			public void onNext(HelloProto.HelloRequest helloRequest) {
+				log.debug("request message is : {}", helloRequest.getName());
+			}
+
+			@Override
+			public void onError(Throwable throwable) {
+
+			}
+		};
+	}
+
 }
