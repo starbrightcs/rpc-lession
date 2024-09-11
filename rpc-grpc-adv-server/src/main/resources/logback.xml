@@ -9,12 +9,12 @@
     </appender>
 
     <!--自定义只展示哪个包的日志信息，需要注释下面的root-->
-    <logger name="com.starbright" level="DEBUG" additivity="false">
-        <appender-ref ref="STDOUT"/>
-    </logger>
+<!--    <logger name="com.starbright" level="DEBUG" additivity="false">-->
+<!--        <appender-ref ref="STDOUT"/>-->
+<!--    </logger>-->
 
-    <!--<root level="DEBUG">
+    <root level="DEBUG">
         <appender-ref ref="STDOUT"/>
-    </root>-->
+    </root>
 
 </configuration>

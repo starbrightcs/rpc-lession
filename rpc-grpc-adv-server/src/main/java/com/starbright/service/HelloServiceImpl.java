@@ -2,9 +2,12 @@ package com.starbright.service;
 
 import com.starbright.HelloProto;
 import com.starbright.HelloServiceGrpc;
+import io.grpc.Status;
 import io.grpc.stub.StreamObserver;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import java.util.Random;
 
 /**
  * @description:
@@ -15,9 +18,17 @@ public class HelloServiceImpl extends HelloServiceGrpc.HelloServiceImplBase {
 
 	private static final Logger log = LoggerFactory.getLogger(HelloServiceImpl.class);
 
+	private static final Random RANDOM = new Random();
+
 	@Override
 	public void hello(HelloProto.HelloRequest request, StreamObserver<HelloProto.HelloResponse> responseObserver) {
 		log.info("参数: {}", request.getName());
+
+		// 如果随机数大于30，则抛出一个异常，模拟网络抖动问题
+		if (RANDOM.nextInt(100) > 30) {
+			log.error("随机数大于30, 返回 UNAVAILABLE 异常");
+			responseObserver.onError(Status.UNAVAILABLE.withDescription("for retry").asException());
+		}
 
 		// 封装响应
 		responseObserver.onNext(

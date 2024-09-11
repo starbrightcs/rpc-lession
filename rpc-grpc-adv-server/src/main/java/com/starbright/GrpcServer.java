@@ -1,6 +1,5 @@
 package com.starbright;
 
-import com.starbright.interceptor.CustomServerInterceptor;
 import com.starbright.service.HelloServiceImpl;
 import io.grpc.Server;
 import io.grpc.ServerBuilder;
@@ -17,7 +16,7 @@ public class GrpcServer {
 	public static void main(String[] args) throws IOException, InterruptedException {
 		Server server = ServerBuilder.forPort(9000)
 				.addService(new HelloServiceImpl())
-				.intercept(new CustomServerInterceptor())
+				// .intercept(new CustomServerInterceptor())
 				.build()
 				.start();
 

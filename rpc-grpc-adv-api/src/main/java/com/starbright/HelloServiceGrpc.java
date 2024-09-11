@@ -12,7 +12,7 @@ public final class HelloServiceGrpc {
 
   private HelloServiceGrpc() {}
 
-  public static final java.lang.String SERVICE_NAME = "HelloService";
+  public static final java.lang.String SERVICE_NAME = "com.starbright.HelloService";
 
   // Static method descriptors that strictly reflect the proto.
   private static volatile io.grpc.MethodDescriptor<com.starbright.HelloProto.HelloRequest,

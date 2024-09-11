@@ -16,7 +16,7 @@ public final class HelloProto {
         (com.google.protobuf.ExtensionRegistryLite) registry);
   }
   public interface HelloRequestOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:HelloRequest)
+      // @@protoc_insertion_point(interface_extends:com.starbright.HelloRequest)
       com.google.protobuf.MessageOrBuilder {
 
     /**
@@ -32,11 +32,11 @@ public final class HelloProto {
         getNameBytes();
   }
   /**
-   * Protobuf type {@code HelloRequest}
+   * Protobuf type {@code com.starbright.HelloRequest}
    */
   public static final class HelloRequest extends
       com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:HelloRequest)
+      // @@protoc_insertion_point(message_implements:com.starbright.HelloRequest)
       HelloRequestOrBuilder {
   private static final long serialVersionUID = 0L;
     // Use HelloRequest.newBuilder() to construct.
@@ -56,13 +56,13 @@ public final class HelloProto {
 
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.starbright.HelloProto.internal_static_HelloRequest_descriptor;
+      return com.starbright.HelloProto.internal_static_com_starbright_HelloRequest_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.starbright.HelloProto.internal_static_HelloRequest_fieldAccessorTable
+      return com.starbright.HelloProto.internal_static_com_starbright_HelloRequest_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               com.starbright.HelloProto.HelloRequest.class, com.starbright.HelloProto.HelloRequest.Builder.class);
     }
@@ -263,21 +263,21 @@ public final class HelloProto {
       return builder;
     }
     /**
-     * Protobuf type {@code HelloRequest}
+     * Protobuf type {@code com.starbright.HelloRequest}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:HelloRequest)
+        // @@protoc_insertion_point(builder_implements:com.starbright.HelloRequest)
         com.starbright.HelloProto.HelloRequestOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.starbright.HelloProto.internal_static_HelloRequest_descriptor;
+        return com.starbright.HelloProto.internal_static_com_starbright_HelloRequest_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.starbright.HelloProto.internal_static_HelloRequest_fieldAccessorTable
+        return com.starbright.HelloProto.internal_static_com_starbright_HelloRequest_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
                 com.starbright.HelloProto.HelloRequest.class, com.starbright.HelloProto.HelloRequest.Builder.class);
       }
@@ -303,7 +303,7 @@ public final class HelloProto {
       @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.starbright.HelloProto.internal_static_HelloRequest_descriptor;
+        return com.starbright.HelloProto.internal_static_com_starbright_HelloRequest_descriptor;
       }
 
       @java.lang.Override
@@ -516,10 +516,10 @@ public final class HelloProto {
       }
 
 
-      // @@protoc_insertion_point(builder_scope:HelloRequest)
+      // @@protoc_insertion_point(builder_scope:com.starbright.HelloRequest)
     }
 
-    // @@protoc_insertion_point(class_scope:HelloRequest)
+    // @@protoc_insertion_point(class_scope:com.starbright.HelloRequest)
     private static final com.starbright.HelloProto.HelloRequest DEFAULT_INSTANCE;
     static {
       DEFAULT_INSTANCE = new com.starbright.HelloProto.HelloRequest();
@@ -568,7 +568,7 @@ public final class HelloProto {
   }
 
   public interface HelloResponseOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:HelloResponse)
+      // @@protoc_insertion_point(interface_extends:com.starbright.HelloResponse)
       com.google.protobuf.MessageOrBuilder {
 
     /**
@@ -584,11 +584,11 @@ public final class HelloProto {
         getResultBytes();
   }
   /**
-   * Protobuf type {@code HelloResponse}
+   * Protobuf type {@code com.starbright.HelloResponse}
    */
   public static final class HelloResponse extends
       com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:HelloResponse)
+      // @@protoc_insertion_point(message_implements:com.starbright.HelloResponse)
       HelloResponseOrBuilder {
   private static final long serialVersionUID = 0L;
     // Use HelloResponse.newBuilder() to construct.
@@ -608,13 +608,13 @@ public final class HelloProto {
 
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.starbright.HelloProto.internal_static_HelloResponse_descriptor;
+      return com.starbright.HelloProto.internal_static_com_starbright_HelloResponse_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.starbright.HelloProto.internal_static_HelloResponse_fieldAccessorTable
+      return com.starbright.HelloProto.internal_static_com_starbright_HelloResponse_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               com.starbright.HelloProto.HelloResponse.class, com.starbright.HelloProto.HelloResponse.Builder.class);
     }
@@ -815,21 +815,21 @@ public final class HelloProto {
       return builder;
     }
     /**
-     * Protobuf type {@code HelloResponse}
+     * Protobuf type {@code com.starbright.HelloResponse}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:HelloResponse)
+        // @@protoc_insertion_point(builder_implements:com.starbright.HelloResponse)
         com.starbright.HelloProto.HelloResponseOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.starbright.HelloProto.internal_static_HelloResponse_descriptor;
+        return com.starbright.HelloProto.internal_static_com_starbright_HelloResponse_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.starbright.HelloProto.internal_static_HelloResponse_fieldAccessorTable
+        return com.starbright.HelloProto.internal_static_com_starbright_HelloResponse_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
                 com.starbright.HelloProto.HelloResponse.class, com.starbright.HelloProto.HelloResponse.Builder.class);
       }
@@ -855,7 +855,7 @@ public final class HelloProto {
       @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.starbright.HelloProto.internal_static_HelloResponse_descriptor;
+        return com.starbright.HelloProto.internal_static_com_starbright_HelloResponse_descriptor;
       }
 
       @java.lang.Override
@@ -1068,10 +1068,10 @@ public final class HelloProto {
       }
 
 
-      // @@protoc_insertion_point(builder_scope:HelloResponse)
+      // @@protoc_insertion_point(builder_scope:com.starbright.HelloResponse)
     }
 
-    // @@protoc_insertion_point(class_scope:HelloResponse)
+    // @@protoc_insertion_point(class_scope:com.starbright.HelloResponse)
     private static final com.starbright.HelloProto.HelloResponse DEFAULT_INSTANCE;
     static {
       DEFAULT_INSTANCE = new com.starbright.HelloProto.HelloResponse();
@@ -1120,15 +1120,15 @@ public final class HelloProto {
   }
 
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_HelloRequest_descriptor;
+    internal_static_com_starbright_HelloRequest_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_HelloRequest_fieldAccessorTable;
+      internal_static_com_starbright_HelloRequest_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_HelloResponse_descriptor;
+    internal_static_com_starbright_HelloResponse_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_HelloResponse_fieldAccessorTable;
+      internal_static_com_starbright_HelloResponse_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -1138,28 +1138,30 @@ public final class HelloProto {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\013Hello.proto\"\034\n\014HelloRequest\022\014\n\004name\030\001 " +
-      "\001(\t\"\037\n\rHelloResponse\022\016\n\006result\030\001 \001(\t2g\n\014" +
-      "HelloService\022(\n\005hello\022\r.HelloRequest\032\016.H" +
-      "elloResponse\"\000\022-\n\006hello1\022\r.HelloRequest\032" +
-      "\016.HelloResponse\"\000(\0010\001B\036\n\016com.starbrightB" +
-      "\nHelloProtoP\000b\006proto3"
+      "\n\013Hello.proto\022\016com.starbright\"\034\n\014HelloRe" +
+      "quest\022\014\n\004name\030\001 \001(\t\"\037\n\rHelloResponse\022\016\n\006" +
+      "result\030\001 \001(\t2\243\001\n\014HelloService\022F\n\005hello\022\034" +
+      ".com.starbright.HelloRequest\032\035.com.starb" +
+      "right.HelloResponse\"\000\022K\n\006hello1\022\034.com.st" +
+      "arbright.HelloRequest\032\035.com.starbright.H" +
+      "elloResponse\"\000(\0010\001B\036\n\016com.starbrightB\nHe" +
+      "lloProtoP\000b\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
         });
-    internal_static_HelloRequest_descriptor =
+    internal_static_com_starbright_HelloRequest_descriptor =
       getDescriptor().getMessageTypes().get(0);
-    internal_static_HelloRequest_fieldAccessorTable = new
+    internal_static_com_starbright_HelloRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_HelloRequest_descriptor,
+        internal_static_com_starbright_HelloRequest_descriptor,
         new java.lang.String[] { "Name", });
-    internal_static_HelloResponse_descriptor =
+    internal_static_com_starbright_HelloResponse_descriptor =
       getDescriptor().getMessageTypes().get(1);
-    internal_static_HelloResponse_fieldAccessorTable = new
+    internal_static_com_starbright_HelloResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_HelloResponse_descriptor,
+        internal_static_com_starbright_HelloResponse_descriptor,
         new java.lang.String[] { "Result", });
   }
 
