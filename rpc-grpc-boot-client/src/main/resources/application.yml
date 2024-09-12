@@ -2,9 +2,23 @@ spring:
   application:
     name: rpc-grpc-boot-client
 
+#grpc:
+#  client:
+#    grpc-server:
+#      # 设置服务端地址
+#      address: 'static://127.0.0.1:9000'
+#      negotiation-type: plaintext
+
+
+server:
+  port: 8888
+
+# grpc配置
 grpc:
   client:
-    grpc-server:
-      # 设置服务端地址
-      address: 'static://127.0.0.1:9000'
+    cloud-grpc-server:
+      # 这里需要写discovery:///集群的名字
+      address: 'discovery:///rpc-grpc-boot-server'
       negotiation-type: plaintext
+      enable-keep-alive: true
+      keep-alive-without-calls: true

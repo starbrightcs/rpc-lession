@@ -19,7 +19,8 @@ public class HelloController {
 
 	private static final Logger log = LoggerFactory.getLogger(HelloController.class);
 	// 从哪里获取，从grpc-server进行获取
-	@GrpcClient("grpc-server")
+	// @GrpcClient("grpc-server")
+	@GrpcClient("cloud-grpc-server")
 	private HelloServiceGrpc.HelloServiceBlockingStub helloServiceBlockingStub;
 
 

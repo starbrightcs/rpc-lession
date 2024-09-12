@@ -4,9 +4,18 @@ spring:
   application:
     # 默认是为空的
     name: rpc-grpc-boot-server
+  cloud:
+    consul:
+      discovery:
+        hostname: 127.0.0.1
+        port: 8500
+        heartbeat:
+          enabled: true
+          ttl: 10
+
   # 不启动tomcat应用
-  main:
-    web-application-type: none
+#  main:
+#    web-application-type: none
 
 # 核心配置grpc端口号
 grpc:
