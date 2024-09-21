@@ -23,6 +23,7 @@
     <module>rpc-grpc-adv-client</module>
     <module>rpc-grpc-adv-server</module>
       <module>rpc-myrpc-dev1</module>
+      <module>rpc-myrpc-zk</module>
   </modules>
 
   <properties>
