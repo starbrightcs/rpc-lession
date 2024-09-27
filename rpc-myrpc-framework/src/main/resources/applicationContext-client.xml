@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="registry" class="com.starbright.registry.impl.ZookeeperRegistry">
+        <constructor-arg value="127.0.0.1:2181"/>
+    </bean>
+
+    <bean id="transport" class="com.starbright.transport.impl.NettyTransport"/>
+
+    <bean id="cluster" class="com.starbright.cluster.impl.FailFastCluster"/>
+
+    <bean id="loadBalancer" class="com.starbright.loadbalance.impl.RandomLoadBalancer"/>
+
+    <bean id="userService" class="com.starbright.proxy.ProxyFactoryBean">
+        <constructor-arg value="com.starbright.service.UserService"/>
+        <property name="transport" ref="transport"/>
+        <property name="registry" ref="registry"/>
+        <property name="loadBalancer" ref="loadBalancer"/>
+        <property name="cluster" ref="cluster"/>
+    </bean>
+
+</beans>

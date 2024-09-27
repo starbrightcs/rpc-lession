@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="rpcServerProvider" class="com.starbright.RpcServerProvider" init-method="startServer" destroy-method="stopServer">
+        <constructor-arg>
+            <value type="int"> 8081</value>
+        </constructor-arg>
+
+        <constructor-arg>
+            <bean class="com.starbright.registry.impl.ZookeeperRegistry">
+                <constructor-arg value="127.0.0.1:2181"/>
+            </bean>
+        </constructor-arg>
+        <constructor-arg>
+            <map>
+                <entry key="com.starbright.service.UserService">
+                    <bean class="com.starbright.service.impl.UserServiceImpl"/>
+                </entry>
+            </map>
+        </constructor-arg>
+    </bean>
+
+</beans>
